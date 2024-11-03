@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    font-size: 62.8%;
+}
+
+.nav-bar {
+    background-color: rgb(63, 7, 63);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+
+}
+
+li {
+    color: white;
+    padding: 0 10rem;
+    font-size: 3rem;
+}
+
+.gamebox {
+    margin: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.boxcontent {
+    width: 21rem;
+    height: 21rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.bl-0 {
+    border-left: 0;
+
+}
+
+.br-0 {
+    border-right: 0;
+
+}
+
+.bt-0 {
+    border-top: 0;
+
+}
+
+.bb-0 {
+    border-bottom: 0;
+
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.info {
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    width: 8rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+
+
+}
+
+.btn {
+    background-color: red;
+    border-radius: 2rem;
+    padding: 0.3rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        background-color: black;
+        color: white;
+
+    }
+}
+
+.infocontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infobox {
+    margin-top: 3rem;
+    display: flex;
+    gap: 5rem;
+
+}
+
+.textcontent {
+    font-size: 5rem;
+    color: orangered;
+    font-weight: bolder;
+    outline:black;
+}
+
+@media screen and (max-width:800px) {
+    .gamebox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .btn{
+        padding: 0 1.5rem;
+        
+    }
+
+}
